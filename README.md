@@ -8,9 +8,6 @@
 <a href="https://github.com/TylerHillery/tickerfetch/actions?query=workflow%3ATest" target="_blank">
     <img src="https://github.com/TylerHillery/tickerfetch/workflows/CI/badge.svg" alt="CI">
 </a>
-<a href="https://github.com/TylerHillery/tickerfetch/actions?query=workflow%3APublish" target="_blank">
-    <img src="https://github.com/TylerHillery/tickerfetch/workflows/Publish/badge.svg" alt="Publish">
-</a>
 <a href="https://coverage-badge.samuelcolvin.workers.dev/redirect/TylerHillery/tickerfetch" target="_blank">
     <img src="https://coverage-badge.samuelcolvin.workers.dev/TylerHillery/tickerfetch.svg" alt="Coverage">
 <a href="https://pypi.org/project/tickerfetch" target="_blank">
