@@ -10,8 +10,5 @@
 </a>
 <a href="https://coverage-badge.samuelcolvin.workers.dev/redirect/TylerHillery/tickerfetch" target="_blank">
     <img src="https://coverage-badge.samuelcolvin.workers.dev/TylerHillery/tickerfetch.svg" alt="Coverage">
-<a href="https://pypi.org/project/tickerfetch" target="_blank">
-    <img src="https://img.shields.io/pypi/v/tickerfetch?color=%2334D058&label=pypi%20package" alt="Package version">
-</a>
 </p>
 ---
