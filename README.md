@@ -11,4 +11,5 @@
 <a href="https://coverage-badge.samuelcolvin.workers.dev/redirect/TylerHillery/tickerfetch" target="_blank">
     <img src="https://coverage-badge.samuelcolvin.workers.dev/TylerHillery/tickerfetch.svg" alt="Coverage">
 </p>
+
 ---
