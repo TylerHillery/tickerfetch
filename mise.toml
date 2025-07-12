@@ -1,0 +1,57 @@
+[tools]
+uv = '0.7.20'
+
+[tasks.test]
+description = "Run tests"
+run = "uv run -m pytest"
+
+[tasks.cov]
+description = "Run tests and measure coverage"
+run = [
+    "uv run -m coverage erase",
+    "uv run -m coverage run -m pytest tests",
+    "uv run -m coverage combine",
+    "uv run -m coverage report",
+    "uv run -m coverage html"
+]
+
+[tasks.lint]
+description = "Run linters"
+run = [
+    "uv run ruff check --select I --fix",
+    "uv run ruff format"
+]
+
+[tasks.typing]
+description = "Check types"
+run = "uv run mypy src"
+
+[tasks.check-all]
+description = "Perform all checks"
+depends = ["lint", "cov", "typing"]
+
+[tasks.start]
+description = "Run cli"
+run = "uv run tickerfetch"
+
+[tasks.install]
+description = "Ensure project virtualenv is up to date"
+run = "uv sync"
+
+[tasks.update]
+description = "Update dependencies"
+run = "uv sync --upgrade"
+
+[tasks.clean]
+description = "Remove temporary files"
+run = [
+    "rm -rf .venv .pytest_cache .mypy_cache .ruff_cache .coverage htmlcov",
+    "find . -type d -name '__pycache__' -exec rm -r {} +"
+]
+
+[tasks.fresh]
+description = "Recreate project virtualenv from nothing"
+run = [
+    'mise run clean',
+    'mise run install',
+]
